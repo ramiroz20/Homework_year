@@ -1,0 +1,41 @@
+package com.company;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+// Получить два значения с плавающей точкой
+
+        // для сравнения
+        System.out.println("Введите певое число");
+        Scanner console = new Scanner(System.in);
+        float a = console.nextFloat();
+        System.out.println("Введите второе число");
+        float b = console.nextFloat();
+        System.out.println("Округлим числа");
+
+
+        System.out.format("Число a =" + " %.0f ", a);
+        System.out.format("Число b =" + " %.0f ", b);
+// сравнение чисел float
+        System.out.println("Сравним числа");
+        if (Float.compare(a, b) == 0) {
+
+
+            System.out.println("a=b");
+
+        } else if (Float.compare(a, b) < 0) {
+
+
+            System.out.println("a<b");
+
+        } else {
+
+
+            System.out.println("a>b");
+
+
+        }
+    }
+}
