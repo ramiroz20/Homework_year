@@ -1,0 +1,24 @@
+package com.company;
+
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+// Получить два значения с плавающей точкой
+
+        // для сравнения
+        System.out.println("Введите певое число");
+        Scanner console = new Scanner(System.in);
+        float a = console.nextFloat();
+        System.out.println("Введите второе число");
+        float b = console.nextFloat();
+        System.out.println("Округлим числа");
+
+
+        System.out.printf("Число a = " + "%2.2f\n", a);
+        System.out.printf("Число b = " + "%2.2f\n", b);
+
+    }
+}
+
