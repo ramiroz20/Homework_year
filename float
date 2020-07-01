@@ -1,6 +1,6 @@
 package com.company;
 
-import java.text.DecimalFormat;
+
 import java.util.Scanner;
 
 class Main {
@@ -16,26 +16,9 @@ class Main {
         System.out.println("Округлим числа");
 
 
-        System.out.format("Число a =" + " %.0f ", a);
-        System.out.format("Число b =" + " %.0f ", b);
-// сравнение чисел float
-        System.out.println("Сравним числа");
-        if (Float.compare(a, b) == 0) {
+        System.out.printf("Число a = " + "%2.2f\n", a);
+        System.out.printf("Число b = " + "%2.2f\n", b);
 
-
-            System.out.println("a=b");
-
-        } else if (Float.compare(a, b) < 0) {
-
-
-            System.out.println("a<b");
-
-        } else {
-
-
-            System.out.println("a>b");
-
-
-        }
     }
 }
+
